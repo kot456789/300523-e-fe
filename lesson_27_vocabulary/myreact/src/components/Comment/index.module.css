@@ -1,0 +1,6 @@
+.comment {
+   color: darkgray;
+   border-bottom: 1px dashed darkgray;
+   padding: 5px 0;
+   cursor: pointer;
+ }

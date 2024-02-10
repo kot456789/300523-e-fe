@@ -1,0 +1,33 @@
+.post {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.post p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.post > div:first-child {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.post span {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
