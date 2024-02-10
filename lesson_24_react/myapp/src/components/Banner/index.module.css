@@ -1,0 +1,25 @@
+.banner {
+  color: white;
+  font-family: "El Messiri";
+  font-weight: 700;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 40px;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner p {
+  font-size: 24px;
+}
+
+.banner h1 {
+  font-size: 64px;
+  width: 580px;
+  text-align: center;
+  line-height: 140%;
+}

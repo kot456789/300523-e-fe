@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 50px auto;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 800px;
+  list-style: none;
+}
+
+.header div {
+  background-color: #0187bc;
+  font-style: italic;
+  padding: 9px 15px;
+  border-radius: 3px;
+}
+
+.menu_icon {
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media(max-width: 1296px) {
+  .menu_icon {
+    display: block;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .header div {
+    display: none;
+  }
+}

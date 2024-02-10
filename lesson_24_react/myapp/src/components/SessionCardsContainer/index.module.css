@@ -1,0 +1,22 @@
+.sessions_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  grid-auto-rows: 258px;
+}
+
+.sessions_container div:first-child {
+  grid-row: 1 / span 2;
+}
+
+@media(max-width: 1296px) {
+  .sessions_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    grid-auto-rows: 192px;
+  }
+
+  .sessions_container div:first-child {
+    grid-row: 1 / span 1;
+  }
+}

@@ -1,0 +1,35 @@
+.about_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 100px;
+  }
+  
+  .about_container p {
+    color: white;
+    font-size: 16px;
+    font-family: ABeeZee;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 140%;
+  }
+  
+  .about_container div:first-child {
+    margin: auto 70px auto 0;
+  }
+  
+  .about_container div:last-child {
+    margin: auto 0 auto 70px;
+  }
+  
+  .about_container div p:first-child {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  @media(max-width: 1296px) {
+    .about_container img {
+      display: none;
+    }
+  }

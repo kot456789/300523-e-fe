@@ -1,0 +1,15 @@
+.price > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width: 1296px) {
+
+  .price > div > div:first-child {
+    margin: 0 auto;
+  }
+
+  .price > div > div:last-child {
+    display: none;
+  }
+}

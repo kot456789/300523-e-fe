@@ -1,0 +1,14 @@
+.news_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    grid-auto-rows: 258px;
+  }
+  
+  @media(max-width: 1296px) {
+    .news_container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 19px;
+      grid-auto-rows: 206px;
+    }
+  }
