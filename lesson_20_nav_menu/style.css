@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* NAV MENU */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #FFE44D;
+  font-size: 20px;
+}
+
+.header .nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu_icon {
+  border: 1px solid black;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menu_icon {
+    display: block;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .nav_menu {
+    flex-direction: column;
+    position: absolute;
+    background-color: #FFE44D;
+    top: 100%;
+    right: 0;
+    width: 150px;
+    gap: 0;
+    display: none;
+  }
+
+  .header .nav_menu.active {
+    display: flex;
+  }
+
+  .header li {
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* LOGIN FORM */
+
+.login_form {
+  width: 420px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login_form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login_form h3 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.login_form input {
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+  padding: 14px 16px;
+  outline: none;
+}
+
+.login_form input:focus {
+  border: 1px solid #FFE44D;
+}
+
+.login_form button {
+  padding: 14px 24px;
+  border-radius: 55px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.login_form .buttons button:first-child {
+  background-color: #FFE44D;
+  border: 1px solid transparent;
+}
+
+.login_form .buttons button:last-child {
+  background-color: transparent;
+  border: 1px solid #ECEFF1;
+}
+
+
+/* MODAL WINDOW */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.popup.modal_active {
+  display: flex;
+}
+
+.popup_content {
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.close_modal_icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
