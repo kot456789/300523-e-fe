@@ -1,0 +1,9 @@
+1. Создать AddTeamForm (p, input, button). При сабмите собирать информацию, формировать объект (id, team) и выводить объект в консоль
+2. Стилизовать форму
+3. Импортировать AddTeamForm в ConfigurationsPage
+4. Создать AddUserForm (p, input, button). При сабмите собирать информацию, формировать объект (id, user) и выводить объект в консоль
+5. Стилизовать форму
+6. Импортировать AddUserForm в ConfigurationsPage
+7. При сабмите AddUserForm в консоль выводится объект со свойствами id, user, team
+8. Создать состояние users(+setUsers) - []
+9. При сабмите формы AddUserForm объект добавляется в состояние users
