@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .workers_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+  }
+  
+  .workers_container > div {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .workers_container > div > img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
