@@ -1,0 +1,31 @@
+1. Создать компоненты PostCard и PostCardsContainer
+2. Импортировать PostCardsContainer в App
+3. В PostCardsContainer создать 3 карточки (PostCard) постов с произвольным текстом (одинаковым)
+
+4. На основе создать карточки (PostCard) постов с уникальным текстом для каждой карточки
+
+const postsData = [
+  {
+    id: 1,
+    title: 'About weather',
+    text: "It's very warm today!"
+  },
+    {
+    id: 2,
+    title: 'About university',
+    text: 'My favorite subject is Math'
+  },
+    {
+    id: 3,
+    title: 'About myself',
+    text: 'My name is Anna'
+  }
+]
+
+
+...
+
+5. Стилизовать лайки = рамочка, цвет фона, цвет текста, переместить в правый нижний угол
+6. В массиве postsData каждому объекту добавить свойство comments_count
+7. В каждой карточке отрисовать это свойство (Comments count: 2)
+8. Если кол-во комментариев больше или равно 4, то цвет рамки сделать красным, в ином случае синим
