@@ -2,7 +2,7 @@ import React from 'react'
 import s from './index.module.css'
 import CommentsBlock from '../CommentsBlock';
 
-export default function Post({ id, title, description, like, comments, change_like, delete_post, add_comment }) {
+export default function Post({ id, title, description, like, comments, change_like, delete_post, add_comment, delete_comment }) {
 
   const like_text = like ? 'Liked' : 'Like?';
 
@@ -22,7 +22,7 @@ export default function Post({ id, title, description, like, comments, change_li
       <p>{ title }</p>
       <p>{ description }</p>
       <span onClick={() => delete_post(id)}>X</span>
-      <CommentsBlock comments={comments} post_id={id} add_comment={add_comment} />
+      <CommentsBlock comments={comments} post_id={id} add_comment={add_comment} delete_comment={delete_comment} />
     </div>
   )
 }

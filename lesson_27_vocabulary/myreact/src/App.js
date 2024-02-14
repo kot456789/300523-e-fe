@@ -34,12 +34,24 @@ function App() {
     setPosts([...posts])
   }
 
+  const delete_comment = (post_id, comment_id) => {
+    // 1. Найти пост, у которого удаляется комментарий ({} из [])
+    const target_post = posts.find(el => el.id === post_id);
+
+    // 2. У найденного поста обращается к comments и удаляем в нем комментарий ({} из [])
+    target_post.comments = target_post.comments.filter(el => el.id !== comment_id);
+
+    // 3. Передаем обновленное состояние в setPosts
+    setPosts([...posts])
+  }
+
   // App -> PostsContainer -> Post -> CommentsBlock -> AddCommentForm
 
+  // App -> PostsContainer -> Post -> CommentsBlock -> Comment
   return (
     <div>
       <AddPostForm />
-      <PostsContainer posts={posts} change_like={change_like} delete_post={delete_post} add_comment={add_comment} />
+      <PostsContainer posts={posts} change_like={change_like} delete_post={delete_post} add_comment={add_comment} delete_comment={delete_comment} />
     </div>
   );
 }
