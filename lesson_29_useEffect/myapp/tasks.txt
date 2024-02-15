@@ -1,0 +1,17 @@
+1. Создать NavMenu (Main, Users, Products)
+2. Создать MainPage (/), UsersPage (/users), ProductsPage (/products)
+3. Настроить роутинг
+  - подгрузить библиотеку npm i react-router-dom
+  - обернуть приложение в BrowserRouter (в index.js)
+  - в App импортировать Routes, Route (path, element)
+  - Сделать кнопки меню ссылками (Link)
+
+4. Написать функцию getUsers() в отдельном файле, которая отправляет запрос по ссылке https://jsonplaceholder.typicode.com/users и  выводит полученные данные в консоль
+5. Вызвать функцию getUsers() в App
+6. Создать состояние users(+setUsers) и поместить полученные по запросу данные в это состояние
+7. Создать UsersContainer и UserCard
+8. Из полученных данных отрисовать карточки пользователей (имя, юзернэйм и кликабельный мэйл). Использовать useContext()
+9. При клике на карточку удалять ее
+10. На страницу с пользователями добавить кнопку, при клике на которую удаляются все пользователи
+
+ДЗ: https://dummyjson.com/products
