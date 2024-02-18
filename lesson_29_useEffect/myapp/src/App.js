@@ -7,9 +7,26 @@ import ProductsPage from './pages/ProductsPage';
 import { getUsers } from './requests/users';
 import { useState, useEffect } from 'react';
 import { Context } from './context';
+import { getProducts } from './requests/products';
 
 function App() {
+  // ----------------------------
+  // getProducts();
 
+  const [ products, setProducts ] = useState([]);
+
+  useEffect(() => {
+    getProducts(setProducts)
+  }, []);
+
+  // console.log(products);
+
+  const deleteProduct = id => setProducts(products.filter(el => el.id !== id));
+
+  const deleteAllProducts = () => setProducts([]);
+
+   // ----------------------------
+  
   const [ users, setUsers ] = useState([]);
 
   useEffect(() => {
@@ -22,7 +39,7 @@ function App() {
 
   return (
     <div>
-      <Context.Provider value={{ users, deleteUser, deleteAllUsers }}>
+      <Context.Provider value={{ users, deleteUser, deleteAllUsers, products, deleteProduct, deleteAllProducts }}>
         <NavMenu />
         <Routes>
           <Route path='/' element={<MainPage />} />
