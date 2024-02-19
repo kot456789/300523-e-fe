@@ -15,15 +15,15 @@ function App() {
 
   const [ products, setProducts ] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => {          
     getProducts(setProducts)
-  }, []);
+  }, []);    // !функция useEffect вызывается один раз при перезагрузке компонента,чтобы массив выводился   в консоль 1 раз, а не бесконечно
 
   // console.log(products);
 
-  const deleteProduct = id => setProducts(products.filter(el => el.id !== id));
+  const deleteProduct = id => setProducts(products.filter(el => el.id !== id)); // удаляем карточку Product
 
-  const deleteAllProducts = () => setProducts([]);
+  const deleteAllProducts = () => setProducts([]); // удаляем все карточки Products
 
    // ----------------------------
   
@@ -31,11 +31,11 @@ function App() {
 
   useEffect(() => {
     getUsers(setUsers)
-  }, []); // функция вызывается один раз при перезагрузке компонента 
+  }, []);  // !функция useEffect вызывается один раз при перезагрузке компонента,    чтобы массив выводился в консоль 1 раз, а не бесконечно
 
-  const deleteUser = id => setUsers(users.filter(el => el.id !== id));
+  const deleteUser = id => setUsers(users.filter(el => el.id !== id));  // удаляем карточку User
 
-  const deleteAllUsers = () => setUsers([]);
+  const deleteAllUsers = () => setUsers([]);   // удаляем все карточки Users
 
   return (
     <div>

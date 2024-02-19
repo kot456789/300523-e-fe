@@ -5,12 +5,12 @@ import { Context } from '../../context';
 
 export default function ProductCard({id, title, price, brand}) {
 
-  const { deleteProduct } = useContext(Context);
+  const { deleteProduct } = useContext(Context); // удаляем карточку Product
 
   return (
     <div
     className={s.product_card}
-    onClick={() => deleteProduct(id)}
+    onClick={() => deleteProduct(id)}    // удаляем карточку Product при клике на карточку
     >
       <p>Title: { title }</p>
       <p>Price: { price }</p>
