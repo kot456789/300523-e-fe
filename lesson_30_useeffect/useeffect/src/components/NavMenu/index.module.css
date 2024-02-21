@@ -1,0 +1,13 @@
+.nav_menu {
+   display: flex;
+   justify-content: center;
+   background-color: darkcyan;
+   gap: 40px;
+   font-size: 25px;
+   padding: 15px;
+ }
+ 
+ .nav_menu a {
+   color: white;
+   text-decoration: none;
+ }

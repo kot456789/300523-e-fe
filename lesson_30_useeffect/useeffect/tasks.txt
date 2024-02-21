@@ -1,0 +1,14 @@
+1. Создать NavMenu (Main, Categories). Стилизовать
+2. Создать MainPage (/) и CategoriesPage (/categories)
+3. Настроить роутинг
+4. Создать состояние categories(+setCategories) и поместить [] в качестве изначального состояния
+5. Отправить запрос по ссылке https://fakestoreapi.com/products/categories и полученные данные поместить в состояние categories
+6. Вывести состояние categories в консоль
+7. Создать CategoriesContainer и CategoryCard
+8. Импортировать CategoriesContainer в CategoriesPage
+9. Из состояния categories в CategoriesContainer отрисовать карточки (CategoryCard) - через useContext()
+10. Написать функцию getProductsByCategory(), которая принимает в качестве аргумента название категории и подставляет это название в запрос. 
+11. Создать страницу ProductsByCategoriesPage и подключить ее к роутингу
+12. Создать состояние productsByCategory(+setProductsByCategory)
+13. Поместить в состояние productsByCategory результат запроса getProductsByCategory()
+14. Отрисовать карточки товаров в ProductsContainer (title, description, price)
