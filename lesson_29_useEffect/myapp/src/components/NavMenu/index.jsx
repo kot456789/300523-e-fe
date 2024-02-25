@@ -9,5 +9,5 @@ export default function NavMenu() {
       <Link to='/users'>Users</Link>
       <Link to='/products'>Products</Link>
     </div>
-  )                     // !при клике на Main нас будет направлять на главный Rout '/' , на Users на  '/users' , на Products  '/products'
+  )                     // !при клике на Main нас будет направлять на главный Rout '/' , на Users на  '/users' , на Products на '/products'
 }

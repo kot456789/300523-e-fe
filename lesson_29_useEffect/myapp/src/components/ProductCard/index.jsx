@@ -3,7 +3,7 @@ import s from './index.module.css'
 import { Context } from '../../context';
 
 
-export default function ProductCard({id, title, price, brand}) {
+export default function ProductsCard({id, title, price, brand, images}) {
 
   const { deleteProduct } = useContext(Context); // удаляем карточку Product
 
@@ -11,11 +11,12 @@ export default function ProductCard({id, title, price, brand}) {
     <div
     className={s.product_card}
     onClick={() => deleteProduct(id)}    // удаляем карточку Product при клике на карточку
-    >
+    >                                     
+      <img src={images} alt={title} />     
       <p>Title: { title }</p>
-      <p>Price: { price }</p>
+      <p>Price: { price }$</p>
       <p>Brand: { brand }</p>
-      
-   </div>
+                                       
+   </div>                       // image (15 строка) неработает 
   )
 }
