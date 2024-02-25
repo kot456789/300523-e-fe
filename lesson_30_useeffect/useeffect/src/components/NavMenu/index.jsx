@@ -7,6 +7,7 @@ export default function NavMenu() {
     <div className={s.nav_menu}>
       <Link to='/'>Main</Link>
       <Link to='/categories'>Categories</Link>
+      <Link to='/users'>Users</Link>
     </div>
   )
 }

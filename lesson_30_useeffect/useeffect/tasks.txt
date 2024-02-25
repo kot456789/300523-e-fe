@@ -12,3 +12,27 @@
 12. Создать состояние productsByCategory(+setProductsByCategory)
 13. Поместить в состояние productsByCategory результат запроса getProductsByCategory()
 14. Отрисовать карточки товаров в ProductsContainer (title, description, price)
+15. Создать страницу SingleProductPage и подключить ее к роутингу (/products/:product_id)
+16. При клике на карточку товара перебрасывать на роут/products/:product_id
+17. Создать состояние singleProduct(+setSingleProduct) на странице SingleProductPage. Изначальное состояние {}
+18. Написать функцию getSingleProduct(), которая отправляет запрос по ссылке https://fakestoreapi.com/products/product_id и записывает полученный объект в состояние singleProduct
+18. Вывести состояние singleProduct в консоль
+19. Из состояния singleProduct отрисовать контент на странице (image, title, description, price)
+20. На страницу SingleProductPage добавить кнопку (div) с названием категории товара. Стилизовать кнопку
+21. При клике на кнопку с категорией должно перебрасывать на страницу со всеми товарами этой категории
+22. Создать страницу UsersPage и добавить ее к роутингу (/users)
+23. В NavMenu добавить ссылку на страницу UsersPage
+24. Создать состояние users(+setUsers) в App - []
+25. Написать функцию getUsers(), которая отправляет запрос по ссылке https://dummyjson.com/users и записывает полученный массив с юзерами в состояние users
+26. Вывести состояние users в консоль
+27. Создать UsersContainer и UserCard
+28. Отрисовать карточки (image, firstName, lastName) юзеров в UsersContainer
+29. Импортировать UsersContainer в UsersPage
+
+ДЗ:
+15. Создать страницу SingleUserPage и подключить ее к роутингу (/users/:user_id)
+16. При клике на карточку товара перебрасывать на роут /users/:user_id
+17. Создать состояние singleUser(+setSingleUser) на странице SingleUserPage. Изначальное состояние {}
+18. Написать функцию getSingleUser(), которая отправляет запрос по ссылке https://dummyjson.com/users/users_id и записывает полученный объект в состояние singleUser
+18. Вывести состояние singleUser в консоль
+19. Из состояния singleUser отрисовать контент на странице

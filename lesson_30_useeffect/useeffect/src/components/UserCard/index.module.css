@@ -1,0 +1,14 @@
+.user_card {
+   border: 1px solid black;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .user_card img {
+   height: 150px;
+   width: 150px;
+   object-fit: contain;
+ }

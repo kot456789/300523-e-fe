@@ -7,27 +7,41 @@ import { useEffect, useState } from 'react';
 import { getCategories } from './requests/products';
 import { Context } from './context';
 import ProductsByCategoryPage from './pages/ProductsByCategoryPage';
+import SingleProductPage from './pages/SingleProductPage';
+import UsersPage from './pages/UsersPage';
+import { getUsers } from './requests/users';
 
 function App() {
 
   const [ categories, setCategories ] = useState([]);  // создаём состояние и ложим пустой массив
+  const [ users, setUsers ] = useState([]);
 
   useEffect(() => {
-    getCategories(setCategories)
+    getCategories(setCategories);
+    getUsers(setUsers);
   }, []);
+
+  console.log(users)
 
   return (
     <div>
-      <Context.Provider value={{ categories }}>
+      <Context.Provider value={{ categories, users }}>
         <NavMenu />
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/categories' element={<CategoriesPage />} />
-          <Route path='/categories/:category_name' element=      /*эту переменную придумали-  :category_name(будет меняться)*/     {<ProductsByCategoryPage />} />
-        </Routes>
-      </Context.Provider>
-    </div>
-  );
+          <Route path='/categories/:category_name' element={<ProductsByCategoryPage />} />   
+          <Route path='/products/:product_id' element={<SingleProductPage />} />
+          <Route path='/users' element={<UsersPage />} />                    
+        </Routes>                        
+      </Context.Provider>                       
+    </div>                                  /*эту переменную придумали (строка 33)-  :category_name(будет меняться)*/     
+  )
 }
 
 export default App;
+
+
+
+
+
