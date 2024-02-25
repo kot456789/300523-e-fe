@@ -3,3 +3,9 @@ export const getUsers = callback => {
      .then(res => res.json())
      .then(json => callback(json.users))
  }
+
+ export const getSingleUser = (user_id, call) => {
+  fetch(`https://dummyjson.com/users/${user_id}`)
+   .then(res => res.json())
+   .then(json => call(json))
+ }

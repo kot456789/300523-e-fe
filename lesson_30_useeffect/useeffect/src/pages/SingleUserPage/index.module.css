@@ -1,0 +1,42 @@
+.single_user {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+ 
+   width: 800px;
+   margin: 30px auto;
+ }
+ 
+ .single_user img {
+   width: 200px;
+   height: 200px;
+   object-fit: contain;
+ }
+ 
+ .single_user div {
+   width: 300px;
+ }
+ 
+ .single_user div p:first-child {
+   font-weight: 700;
+   margin: 15px 0;
+   font-size: 18px;
+ }
+ 
+ .single_user > div p:nth-child(3) {
+   font-weight: 700;
+   margin: 15px 0;
+ }
+ 
+ .single_user > div div {
+   background-color: rgb(97, 226, 22);
+   color: white;
+   border-radius: 15px;
+   padding: 10px;
+   width: fit-content;
+   font-size: 18px;
+ }
+ 
+ .single_user a {
+   text-decoration: none;
+ }

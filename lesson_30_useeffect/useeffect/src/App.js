@@ -10,6 +10,7 @@ import ProductsByCategoryPage from './pages/ProductsByCategoryPage';
 import SingleProductPage from './pages/SingleProductPage';
 import UsersPage from './pages/UsersPage';
 import { getUsers } from './requests/users';
+import SingleUserPage from './pages/SingleUserPage';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='/categories' element={<CategoriesPage />} />
           <Route path='/categories/:category_name' element={<ProductsByCategoryPage />} />   
           <Route path='/products/:product_id' element={<SingleProductPage />} />
+          <Route path='/users/:user_id' element={<SingleUserPage />} />
           <Route path='/users' element={<UsersPage />} />                    
         </Routes>                        
       </Context.Provider>                       
