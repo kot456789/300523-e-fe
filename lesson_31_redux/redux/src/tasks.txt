@@ -1,0 +1,22 @@
+1. npm i redux react-redux
+2. Cоздать store (store -> index.js)
+3. Связать store c <App /> через Provider
+4. Создать UsersContainer и UserCard
+5. Импортировать UsersContainer в App
+6. Создать usersReducer и поместить в него в качестве изначального состояния usersData
+7. Добавить usersReducer в rootReducer
+8. С помощью useSelector() в store найти usersReducer по ключу user 
+9. Отрисовать карточки юзеров на основе состояния из usersReducer
+10. Создать deleteUserAction()
+11. Прописать логику удаления карточки в usersReducer 
+12. Создать dispatch через useDispatch()
+13. Вызвать функцию deleteUserAction() при клике на крестик через dispatch
+
+====
+
+14. Создать ProductCard и ProductsContainer
+ 15. Импортировать ProductContainer в App
+ 16. Создать productsReducer и поместить в него в качестве изначального состояния productsData
+ 17. Добавить productsReducer в rootReducer под ключом products
+18. В ProductsContainer обратиться к store и по ключу products найти productsReducer
+ 19. Отрисовать карточки продуктов
