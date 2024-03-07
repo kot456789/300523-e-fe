@@ -1,6 +1,6 @@
 .single_product {
    display: flex;
-   justify-content: center;
+   justify-content: center;  /*размещаем по центру*/
    gap: 40px;
  
    width: 800px;
@@ -8,27 +8,27 @@
  }
  
  .single_product img {
-   width: 200px;
-   height: 200px;
-   object-fit: contain;
+   width: 200px;            /*Ширина*/
+   height: 200px;           /*высота*/
+   object-fit: contain;     /*Подгонка объекта*/
  }
  
  .single_product div {
-   width: 300px;
+   width: 300px;      
  }
+                        
+ .single_product div p:first-child {     /*заголовок увеличели и сделали отступ от текста*/
+   font-weight: 700;      /*Насыщенность шрифта*/
+   margin: 15px 0;        /*сделали отступ(15px 0)*/
+   font-size: 18px;       /*размер шрифта*/
+ }                 
  
- .single_product div p:first-child {
+ .single_product > div p:nth-child(3) {    /*цену товара увеличели и сделали отступ от текста и кнопки*/
    font-weight: 700;
    margin: 15px 0;
-   font-size: 18px;
  }
  
- .single_product > div p:nth-child(3) {
-   font-weight: 700;
-   margin: 15px 0;
- }
- 
- .single_product > div div {
+ .single_product > div div {        /*оформляем кнопку*/
    background-color: orange;
    color: white;
    border-radius: 15px;
@@ -38,5 +38,5 @@
  }
  
  .single_product a {
-   text-decoration: none;
+   text-decoration: none;    /*Текстовое оформление*/
  }

@@ -35,6 +35,7 @@
    padding: 10px;
    width: fit-content;
    font-size: 18px;
+   cursor: pointer
  }
  
  .single_user a {

@@ -19,12 +19,12 @@ export default function SingleUserPage() {
     <div className={s.single_user}>
       <img src={image} alt={title} />
       <div>
-         <p>Firstname:{ firstName }</p>
-         <p>Lastname:{ lastName }</p>
-         <p>Age:{ age }</p>
-         <p>Password:{ password }</p>
-         <p>Phone number:{ phone }</p>
-      <div>back</div>
+         <p>Firstname: { firstName }</p>
+         <p>Lastname: { lastName }</p>
+         <p>Age: { age }</p>
+         <p>Password: { password }</p>
+         <p>Phone number: {phone }</p>       
+        <div>back</div>  
       </div>
     </div>
   )
