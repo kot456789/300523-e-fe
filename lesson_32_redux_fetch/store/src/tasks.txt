@@ -1,0 +1,20 @@
+1. Создать NavMenu (Main, Categories), MainPage, CategoriesPage
+2. Настроить роутинг - при клике на Main, Categories перебрасывает на соответствующие страницы
+3. Стилизовать NavMenu
+4. Создать store и подключить его к приложению
+5. Создать categoriesReducer и поместить его в rootReducer
+6. Создать loadCategoriesAction и прописать для него логику в categoriesReducer
+7. Создать CategoriesContainer и CategoryCard
+8. Импортировать CategoriesContainer в CategoriesPage
+9. Установить redux-thunk: npm i redux-thunk. Подключить middleware к store
+10. Написать функцию getCategories(), которая отправляет запрос по ссылке https://fakestoreapi.com/products/categories и полученные данные записывает в состояние categories
+11. Отрисовать карточки категорий из categoriesData. 
+12. Стилизовать карточки категорий и контейнер
+13. Создать ProductsByCategoryPage и подключить к роутингу (/products/:category)
+14. При клике на карточку категории перебрасывать на соответствующий роут
+15. Создать productsByCategoryReducer и поместить его в rootReducer
+
+======
+16. Написать loadProductsByCategoryAction и прописать логику в productsByCategoryReducer
+17. Написать функцию getProductsByCategory(), которая отправляет запрос и полученные данные записывать в state
+18. Из полученных данных отрисовать карточки товаров
