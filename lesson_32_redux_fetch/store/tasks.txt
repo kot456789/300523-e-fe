@@ -17,4 +17,14 @@
 ======
 16. Написать loadProductsByCategoryAction и прописать логику в productsByCategoryReducer
 17. Написать функцию getProductsByCategory(), которая отправляет запрос и полученные данные записывать в state
-18. Из полученных данных отрисовать карточки товаров
+18. Проверить в консоли состояние
+19. Из полученных данных отрисовать карточки (image, title, price)товаров.
+20. Стилизовать карточки и контейнер (грид)
+
+21. Создать SingleProductPage и включить в роутинг (/product/:id)
+22. При клике на карточку товара перебрасывает на SingleProductPage и в роут подставляется айди товара
+23. Создать singleProductReducer и поместить его в rootReducer
+24. Создать loadSingleProductAction и прописать его логику в singleProductReducer
+25. Написать функцию getSingleProduct, которая отправляет запрос по ссылке https://fakestoreapi.com/products/:id и передает полученные данные в singleProductReducer 
+26. Вызвать функцию getSingleProduct на странице SingleProductPage
+27. В консоли проверить записался ли ответ по запросу в состояние

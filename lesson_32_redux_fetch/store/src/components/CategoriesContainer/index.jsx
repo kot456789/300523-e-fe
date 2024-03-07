@@ -14,8 +14,6 @@ export default function CategoriesContainer() {
 
   const categoriesData = useSelector(store => store.categories);
 
-//   console.log(categoriesData);
-
   return (
     <div className={s.catgories_container}>
       {
