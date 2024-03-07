@@ -7,4 +7,4 @@ const rootReducer = combineReducers({
   products: productsReducer
 });
 
-export const store = createStore(rootReducer);
+export const store = createStore(rootReducer); //! соединяем  store   с  index.js  с помощью Provider (src/store/index.js <--> src/index.js  (с помощью Provider)) 

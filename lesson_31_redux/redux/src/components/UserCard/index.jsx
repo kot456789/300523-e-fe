@@ -16,8 +16,10 @@ export default function UserCard({ id, firstname, age }) {
       <p>Name: { firstname }</p>
       <p>Age: { age }</p>
       <div>
-        <button onClick={() => dispatch(decrementAgeAction(id))}>-</button>
-        <button onClick={() => dispatch(incrementAgeAction(id))}>+</button>
+        <button onClick={() => dispatch    /*уменьшаем age при клике на на кнопку с минусом */
+        (decrementAgeAction(id))}>-</button>   
+        <button onClick={() => dispatch   /*увеличиваем age при клике на на кнопку с плюсом */
+        (incrementAgeAction(id))}>+</button>
       </div>
     </div>
   )
