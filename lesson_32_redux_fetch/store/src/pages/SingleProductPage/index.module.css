@@ -32,3 +32,12 @@
  .product > div span {
    font-weight: 700;
  }
+
+ .product > div > div {
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  width: fit-content;
+  padding: 10px;
+}

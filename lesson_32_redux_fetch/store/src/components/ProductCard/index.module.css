@@ -16,3 +16,16 @@
  .card p {
    text-align: center;
  }
+ 
+ .card a {
+  color: black;
+}
+
+.card div {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  padding: 10px;
+}
