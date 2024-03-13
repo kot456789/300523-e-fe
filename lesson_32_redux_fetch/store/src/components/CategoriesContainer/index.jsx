@@ -17,7 +17,7 @@ export default function CategoriesContainer() {
   return (
     <div className={s.catgories_container}>
       {
-        categoriesData.map(el => <CategoryCard key={el} category={el} />)
+        categoriesData.map(el => <CategoryCard key={el} category={el} />) // отрисовываем карточки
       }
     </div>
   )

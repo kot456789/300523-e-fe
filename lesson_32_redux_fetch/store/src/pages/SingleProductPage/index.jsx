@@ -26,9 +26,9 @@ export default function SingleProductPage() {
         <h3>{ title }</h3>
         <p>{ description }</p>
         <p>{ category }</p>
-        <div onClick={() => dispatch (addToCartAction(singleProductState))}>Add to cart</div>
+        <div onClick={() => dispatch (addToCartAction(singleProductState))}>Add to cart</div> 
         <p>Price: <span>{ price }$</span></p>
-      </div>
-    </div>
+      </div>            
+    </div>    //(строка 29) при клике на кнопку 'Add to cart' вызывать функцию addToCartAction
   )
 }

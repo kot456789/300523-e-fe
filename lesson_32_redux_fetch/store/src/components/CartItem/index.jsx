@@ -4,8 +4,8 @@ import { decrCountAction, deleteCartItemAction, incrCountAction } from '../../st
 import { useDispatch } from 'react-redux'
 
 export default function CartItem({ id, image, title, price, count }) {
-
-  const dispatch = useDispatch();
+                   //в  CartItem описываем структуру карточки принимаем:id, image, title, price, count
+  const dispatch = useDispatch();  //!
 
   return (
     <div className={s.card}>
@@ -15,9 +15,9 @@ export default function CartItem({ id, image, title, price, count }) {
       <div>
         <p>{count}</p>
         <button onClick={() => dispatch(decrCountAction(id))}>-</button>
-        <button onClick={() => dispatch(incrCountAction(id))}>+</button>
-      </div>
-      <p onClick={() => dispatch(deleteCartItemAction(id))}>X</p>
-    </div>
+        <button onClick={() => dispatch(incrCountAction(id))}>+</button> 
+      </div>      
+      <p onClick={() => dispatch(deleteCartItemAction(id))}>X</p> 
+    </div>       //! (строка 20.) удаление мы передаём из cartReducers.js , deleteCartItemAction -это Action. Action работает только через dispatch. dispatch- добавили 8 строка.
   )
 }

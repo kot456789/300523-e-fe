@@ -28,16 +28,29 @@
 25. Написать функцию getSingleProduct, которая отправляет запрос по ссылке https://fakestoreapi.com/products/:id и передает полученные данные в singleProductReducer 
 26. Вызвать функцию getSingleProduct на странице SingleProductPage
 27. В консоли проверить записался ли ответ по запросу в состояние
-28. Создать CartPage. Подключить к роутингу (/cart)
-29. В NavMenu добавить пункт Cart, при клике на который перебрасывает на CartPage.
-30. Создать cartReducer и поместить его в rootReducer
-31. Добавить кнопку Add to cart в двух местах - ProductCard и SingleProductPage
-32. Создать addToCartAction и прописать логику addToCartAction в cartReducer
-33. Создать CartItem и CartItemsContainer
-34. CartItemsContainer поместить в CartPage
+
+28. Создать CartPage  , в pages). Подключить к роутингу (/cart)     ,в App.js).
+29. В NavMenu добавить пункт Cart ((ещё 1 link с Cart)), при клике на который перебрасывает на CartPage.
+
+30.0.  Продукты помещаем в корзину(корзина это отдельное состояние)
+30. Создать cartReducer в reducers) и поместить его в rootReducer в store/index.js)
+
+31. Добавить кнопку Add to cart в двух местах - ProductCard) и SingleProductPage)
+
+32. Создать addToCartAction и прописать логику addToCartAction в cartReducer)
+
+33. Создать CartItem и CartItemsContainer в components)
+34. CartItemsContainer поместить в CartPage)
+
 35. На странице SingleProductPage при клике на кнопку 'Add to cart' вызывать функцию addToCartAction
-36. В CartItemsContainer достать из store состояние cart и отрисовывать из него карточки (CartItem) - image, title, price, count (-+)
-37. Написать deleteCartItemAction, прописать логику в cartReducer
+36. В CartItemsContainer достать из store (через useSelector) состояние cart и отрисовывать из него карточки (CartItem) - image, title, price, count (-+)
+
+37. Написать deleteCartItemAction (используем payload:id)), прописать логику в cartReducer
 38. При клике на крестик в CartItem вызывать deleteCartItemAction
+
 39. Реализовать incrCountAction, прописать логику в cartReducer, вызывать при клике на +
 40. Реализовать decrCountAction, прописать логику в cartReducer, вызывать при клике на -
+
+
+
+payload-полезная нагрузка
