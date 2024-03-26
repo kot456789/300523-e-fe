@@ -1,9 +1,10 @@
-const defaultState = [];
+const defaultState = JSON.parse(localStorage.getItem('cart')) || [];
 
 const ADD_TO_CART = "ADD_TO_CART";
 const DELETE_CART_ITEM = "DELETE_CART_ITEM";
 const INCR_COUNT = "INCR_COUNT";
 const DECR_COUNT = "DECR_COUNT";
+const CLEAR_CART = 'CLEAR_CART';
 // (product) - объект продукта со всеми данными прод-та,к которому лобавляем count
 export const addToCartAction = (product) => ({
   type: ADD_TO_CART,
@@ -15,6 +16,7 @@ export const deleteCartItemAction = (id) => ({
 });
 export const incrCountAction = (id) => ({ type: INCR_COUNT, payload: id });
 export const decrCountAction = (id) => ({ type: DECR_COUNT, payload: id });
+export const clearCartAction = () => ({ type: CLEAR_CART });
 
 // проверяем есть ли продукт в корзине. state-где проверяем(состояние корзины). payload-сам продукт
 const checkProduct = (state, payload) => {
@@ -58,6 +60,10 @@ export const cartReducer = (state = defaultState, action) => {
 
     // 3. Возвращаем обновленное состояние
     return [...state];
+
+  } else if (action.type === CLEAR_CART){
+    return []
   }
+
   return state;
 };

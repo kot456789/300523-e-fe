@@ -1,20 +1,23 @@
+==== урок 05.03.24
+
 1. Создать NavMenu (Main, Categories), MainPage, CategoriesPage
 2. Настроить роутинг - при клике на Main, Categories перебрасывает на соответствующие страницы
 3. Стилизовать NavMenu
-4. Создать store и подключить его к приложению
-5. Создать categoriesReducer и поместить его в rootReducer
+4. Создать store (скачать библ-ку: npm i redux react-redux) и подключить его к приложению в src/index.js (заворачиваем в Provider)
+5. Создать categoriesReducer (в store создать reducers) и поместить его в rootReducer (в store/index.js)
 6. Создать loadCategoriesAction и прописать для него логику в categoriesReducer
-7. Создать CategoriesContainer и CategoryCard
-8. Импортировать CategoriesContainer в CategoriesPage
-9. Установить redux-thunk: npm i redux-thunk. Подключить middleware к store
-10. Написать функцию getCategories(), которая отправляет запрос по ссылке https://fakestoreapi.com/products/categories и полученные данные записывает в состояние categories
+7. Создать CategoriesContainer и CategoryCard в components)
+8. Импортировать CategoriesContainer в CategoriesPage)
+9. Установить redux-thunk: npm i redux-thunk. Подключить middleware (фу-я происходит междум 2-мя функциями) к store
+10. Написать функцию getCategories()  (в requests/categories.js), которая отправляет запрос по ссылке https://fakestoreapi.com/products/categories и полученные данные записывает в состояние categories. Эту функцию будем вызывать в CartItemsContainer/index.js) , создаём dispatch
 11. Отрисовать карточки категорий из categoriesData. 
 12. Стилизовать карточки категорий и контейнер
 13. Создать ProductsByCategoryPage и подключить к роутингу (/products/:category)
 14. При клике на карточку категории перебрасывать на соответствующий роут
 15. Создать productsByCategoryReducer и поместить его в rootReducer
 
-======
+====== урок 07.03.24
+
 16. Написать loadProductsByCategoryAction и прописать логику в productsByCategoryReducer
 17. Написать функцию getProductsByCategory(), которая отправляет запрос и полученные данные записывать в state
 18. Проверить в консоли состояние
@@ -28,6 +31,8 @@
 25. Написать функцию getSingleProduct, которая отправляет запрос по ссылке https://fakestoreapi.com/products/:id и передает полученные данные в singleProductReducer 
 26. Вызвать функцию getSingleProduct на странице SingleProductPage
 27. В консоли проверить записался ли ответ по запросу в состояние
+
+ ==== урок 12.03.24
 
 28. Создать CartPage  , в pages). Подключить к роутингу (/cart)     ,в App.js).
 29. В NavMenu добавить пункт Cart ((ещё 1 link с Cart)), при клике на который перебрасывает на CartPage.
@@ -50,7 +55,12 @@
 
 39. Реализовать incrCountAction, прописать логику в cartReducer, вызывать при клике на +
 40. Реализовать decrCountAction, прописать логику в cartReducer, вызывать при клике на -
+41. Если корзина пустая выводить сообщение 'Cart is empty'
+42. На странице CartPage добавить параграф Total: sum (стоимость всех товаров в корзине)
+43. На странице CartPage добавить кнопку(button), при клике на которую корзина очищается:
+  - в cartReducer создать clearCartAction
+  -  прописать логику экшена
+  - вызвать clearCartAction при клике на кнопку
 
 
-
-payload-полезная нагрузка
+payload-это входящие в фукцию данные

@@ -11,7 +11,7 @@ export default function CartItem({ id, image, title, price, count }) {
     <div className={s.card}>
       <img src={image} alt={title} />
       <p>{title}</p>
-      <p>{price}$</p>
+      <p>{price * count}$</p>
       <div>
         <p>{count}</p>
         <button onClick={() => dispatch(decrCountAction(id))}>-</button>
